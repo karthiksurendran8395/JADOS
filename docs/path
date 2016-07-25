@@ -1,0 +1,31 @@
+PATH
+1)Do not allow execution of kernel program
+	((done))
+2)FAT12 does allows only upper case file names. Provide the shell environment, the user convenience of using lowercase letteer. BUT DONT BREAK compatibility with FAT12 standard. The disk still needs to read by standrard host systems like linux and windows.
+	((done))
+3)Not allowing to use special symbols like = in input region will create a sense of awkwardness to the user, since the norm is to have them available. So, allow users to type them in but show error during processing.
+	((done))
+3)Shell needs 5 commands
+
+	i)cd - cd into a subdir. Must prevent cd into non-dir files.Must show error in such situations.
+	((done))
+	ii)ls - ls the sub-dir and files in curr dir (including . and ..),indicate if file or directory.
+	((done))
+	iii)run- complete, (add non-executablity of kernel)
+	((done))
+	iv)pwd- output the current dir name.
+	((done))
+	v)clr - clear screen
+	((done))
+	vi)hlt - shut down system
+	((done))
+	vii)rst - restart system
+	((done))
+
+	ADDITIONAL FIELDS NEEDED
+
+		1)pwd - Max 500 chars (size limit of curr dir path). Should not store trailing spaces in file names.
+		2)path_max_var_len - len of pwd var (curr 500)   (dw)
+		3)curr_dir_sector_count			     (dw)
+		4)path_var_next_index			     (dw)
+

@@ -1,0 +1,1 @@
+1)NOTE abt disk_params_function : after using far jmup in bootloader, when we reach kernel, the disk info bios interrurpt - int 13h : ah=08h give wrong results if a mov statement is used before it. Documentations mention that some BIOSes implement this badly. From my experience, it seems to work, if used at the very beginning of bootloader.
