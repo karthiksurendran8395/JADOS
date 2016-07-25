@@ -1,4 +1,4 @@
-JADOS (Just Another Disk Operating System)
+#JADOS (Just Another Disk Operating System)
 
 This is an MSDOS style OS. It is written entirely in Assembly - NASM. It is meant for x86 Real Mode (16-bit). It supports FAT12 file-system.  
 
